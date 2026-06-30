@@ -3,116 +3,278 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-<title>ProductFormer</title>
+    <title>ProductFormer</title>
 
-<link rel="stylesheet"
-      href="css/style.css">
+    <link rel="stylesheet"
+          href="css/style.css">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+
 <header>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-<div class="logo">
-PRODUCT<span>FORMER</span>
-</div>
+        <div class="logo">
+            PRODUCT<span>FORMER</span>
+        </div>
 
-<ul class="nav-menu">
+        <ul class="nav-menu">
 
-<li><a href="#" class="active">HOME</a></li>
+            <li><a href="#" class="active">HOME</a></li>
 
-<li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ABOUT US</a></li>
 
-<li><a href="pages/training.html">TRAINING</a></li>
+            <li><a href="pages/training.html">TRAINING</a></li>
 
-<li><a href="#">CULTURE</a></li>
+            <li><a href="#">SERVICES</a></li>
 
-<li><a href="#">SERVICES</a></li>
+            <li><a href="#">TEAM</a></li>
 
-<li><a href="#">TEAM</a></li>
+            <li><a href="#">CONTACT US</a></li>
 
-<li><a href="#">CAREERS</a></li>
+        </ul>
 
-<li><a href="#">GALLERY</a></li>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
 
-<li><a href="#">CONTACT US</a></li>
-
-</ul>
-
-<div class="hamburger">
-
-<span></span>
-<span></span>
-<span></span>
-
-</div>
-
-</nav>
+    </nav>
 
 </header>
 
 
+<!-- ================= HERO ================= -->
+
 <section class="hero">
 
-<div class="slider">
+    <div class="slider">
 
-<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
-class="slide active">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+             class="slide active">
 
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
-class="slide">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+             class="slide">
 
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-class="slide">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+             class="slide">
 
-</div>
+    </div>
 
-<div class="overlay"></div>
+    <div class="overlay"></div>
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>
-PRODUCT<span>FORMER</span>
-</h1>
+        <h1>
+            PRODUCT<span>FORMER</span>
+        </h1>
 
-<h2>
-Transforming Products Into Success
-</h2>
+        <h2>
+            Transforming Products Into Success
+        </h2>
 
-<p>
-We help businesses innovate,
-transform ideas and create
-successful products.
-</p>
+        <p>
+            We help businesses innovate,
+            transform ideas and create
+            successful products.
+        </p>
 
-<div class="hero-buttons">
+        <div class="hero-buttons">
 
-<button class="btn-primary">
-Learn More
-</button>
+            <button class="btn-primary">
+                Learn More
+            </button>
 
-<button class="btn-secondary">
-Contact Us
-</button>
+            <button class="btn-secondary">
+                Contact Us
+            </button>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
 </section>
 
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+
+<div class="footer-box company-box">
+
+    <h2 class="company-title">
+        ProductFormer
+    </h2>
+
+    <p class="company-desc">
+        ProductFormer provides industry-focused
+        training programs and software solutions
+        to empower students and businesses.
+    </p>
+
+    <div class="footer-info">
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="pages/training.html">
+                Training Importance
+            </a>
+
+            <a href="pages/privacy.html">
+                Privacy Policies
+            </a>
+
+            <a href="pages/terms.html">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+        <!-- CONTACT -->
+
+        <div class="contact-box">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                📞 +91 7499581271
+            </p>
+
+            <p>
+                ✉ info@productformer.com
+            </p>
+
+            <p>
+                📍 Chh.Sambhaji Nagar, Maharashtra, India
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <!-- RIGHT REGISTRATION -->
+
+        <div class="footer-box registration-box">
+            
+
+            <h2>Register Now</h2>
+
+            <p>
+                Register for our latest training
+                programs and start your
+                professional journey.
+            </p>
+
+            <form id="registerForm">
+
+                <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Mobile Number"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    name="college"
+                    placeholder="College Name"
+                    required>
+
+                <select
+                    name="course"
+                    required>
+
+                    <option value="">
+                        Select Course
+                    </option>
+
+                    <option>
+                        Python Development
+                    </option>
+
+                    <option>
+                        SQL & Database
+                    </option>
+
+                    <option>
+                        Data Analytics
+                    </option>
+
+                    <option>
+                        Data Science
+                    </option>
+
+                    <option>
+                        Power BI
+                    </option>
+
+                    <option>
+                        Artificial Intelligence
+                    </option>
+
+                    <option>
+                        Full Stack Development
+                    </option>
+
+                </select>
+
+                <button
+                    type="submit"
+                    class="register-btn">
+
+                    Submit
+
+                </button>
+
+                <div id="message"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JS -->
+
 <script src="js/script.js"></script>
+<script src="js/registration.js"></script>
 
 </body>
 </html>

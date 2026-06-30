@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ProductFormer Registration</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="training">
+
+    <h2>
+        Training Registration
+    </h2>
+
+    <div class="card"
+         style="max-width:700px;margin:auto;">
+
+        <form id="registerForm">
+
+            <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Full Name"
+                required
+                style="
+                width:100%;
+                padding:15px;
+                margin:15px 0;">
+
+            <input
+                type="tel"
+                id="mobile"
+                name="mobile"
+                placeholder="Mobile Number"
+                required
+                style="
+                width:100%;
+                padding:15px;
+                margin:15px 0;">
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Address"
+                required
+                style="
+                width:100%;
+                padding:15px;
+                margin:15px 0;">
+
+            <input
+                type="text"
+                id="college"
+                name="college"
+                placeholder="College Name"
+                required
+                style="
+                width:100%;
+                padding:15px;
+                margin:15px 0;">
+
+            <select
+                id="course"
+                name="course"
+                required
+                style="
+                width:100%;
+                padding:15px;
+                margin:15px 0;">
+
+                <option value="">
+                    Select Course
+                </option>
+
+                <option>
+                    Python Development
+                </option>
+
+                <option>
+                    SQL & Database
+                </option>
+
+                <option>
+                    Data Analytics
+                </option>
+
+                <option>
+                    Data Science
+                </option>
+
+                <option>
+                    Power BI
+                </option>
+
+                <option>
+                    Artificial Intelligence
+                </option>
+
+                <option>
+                    Full Stack Development
+                </option>
+
+            </select>
+
+            <button
+                type="submit"
+                class="btn-primary"
+                style="
+                width:100%;
+                margin-top:20px;">
+
+                Register Now
+
+            </button>
+
+        </form>
+
+        <p id="message"
+           style="
+           text-align:center;
+           margin-top:20px;
+           font-weight:bold;">
+        </p>
+
+    </div>
+
+</section>
+
+<script src="../js/registration.js"></script>
+
+</body>
+</html>
