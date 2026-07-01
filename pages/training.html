@@ -22,10 +22,20 @@
 
         <ul class="nav-menu">
             <li><a href="../index.html">HOME</a></li>
+            <li>
+                <a href="#contact-us">
+                    ABOUT US
+                </a>
+            <li>
             <li><a href="#" class="active">TRAINING</a></li>
-            <li><a href="#">SERVICES</a></li>
+            <li><a href="services.html">SERVICES</a></li>
             <li><a href="#">CAREERS</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <!-- <li><a href="#">CONTACT</a></li> -->
+            <li>
+                <a href="#contact-us">
+                    CONTACT US
+                </a>
+            </li>
         </ul>
 
     </nav>
@@ -110,3 +120,201 @@
     </div>
 
 </section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="footer">
+
+    <div class="footer-container">
+
+        <!-- LEFT -->
+
+<div class="footer-box company-box">
+
+    <h2 class="company-title">
+        ProductFormer
+    </h2>
+
+    <p class="company-desc">
+        ProductFormer provides industry-focused
+        training programs and software solutions
+        to empower students and businesses.
+    </p>
+
+    <div class="footer-info">
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="javascript:void(0)"
+            onclick="openModal('training');return false;">
+                Training Importance
+            </a>
+
+            <a href="javascript:void(0)"
+            onclick="openModal('privacy');return false;">
+                Privacy Policies
+            </a>
+
+            <a href="javascript:void(0)"
+            onclick="openModal('terms');return false;">
+                Terms & Conditions
+            </a>
+
+        </div>
+
+
+    
+        <!-- CONTACT -->
+
+        <div class="contact-box" id="contact-us">
+
+            <h3>Contact Us</h3>
+
+            <p>
+                📞 +91 7499581271
+            </p>
+
+            <p>
+                ✉ info@productformer.com
+            </p>
+
+            <!-- <p>
+                📍 Chh.Sambhaji Nagar, Maharashtra, India
+            </p> -->
+
+        </div>
+
+    </div>
+
+</div>
+
+        <!-- RIGHT REGISTRATION -->
+
+        <div class="footer-box registration-box">
+            
+
+            <h2>Register Now</h2>
+
+            <p>
+                Register for our latest training
+                programs and start your
+                professional journey.
+            </p>
+
+            <form id="registerForm">
+
+                <input
+                    type="text"
+                    name="fullname"
+                    placeholder="Full Name"
+                    required>
+
+                <input
+                    type="tel"
+                    name="mobile"
+                    placeholder="Mobile Number"
+                    required>
+
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required>
+
+                <input
+                    type="text"
+                    name="college"
+                    placeholder="College Name"
+                    required>
+
+                <select
+                    name="course"
+                    required>
+
+                    <option value="">
+                        Select Course
+                    </option>
+
+                    <option>
+                        Python Development
+                    </option>
+
+                    <option>
+                        SQL & Database
+                    </option>
+
+                    <option>
+                        Data Analytics
+                    </option>
+
+                    <option>
+                        Data Science
+                    </option>
+
+                    <option>
+                        Power BI
+                    </option>
+
+                    <option>
+                        Artificial Intelligence
+                    </option>
+
+                    <option>
+                        Full Stack Development
+                    </option>
+
+                </select>
+
+                <button
+                    type="submit"
+                    class="register-btn">
+
+                    Submit
+
+                </button>
+
+                <div id="message"></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JS -->
+
+
+<div class="popup-modal" id="popupModal">
+
+    <div class="popup-content">
+
+        <span
+            class="close-btn"
+            onclick="closeModal()">
+
+            &times;
+
+        </span>
+
+        <h2 id="popupTitle"></h2>
+
+        <div id="popupBody"></div>
+
+    </div>
+
+</div>
+
+
+<!-- JS -->
+
+<script src="../js/popup.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/registration.js"></script>
+</body>
+</html>
