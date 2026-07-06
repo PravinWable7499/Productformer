@@ -214,13 +214,13 @@ body{
 
 .company-title{
     color:#ff0066;
-    font-size:42px;
+    font-size:40px;
     font-weight:800;
     margin-bottom:25px;
 }
 
 .company-desc{
-    font-size:20px;
+    font-size:18px;
     line-height:1.8;
     color:#ddd;
     max-width:700px;
@@ -234,7 +234,7 @@ body{
 
 .footer-links h3,
 .contact-box h3{
-    font-size:30px;
+    font-size:28px;
     margin-bottom:25px;
     color:#fff;
 }
@@ -244,7 +244,7 @@ body{
     color:#fff;
     text-decoration:none;
     margin:18px 0;
-    font-size:20px;
+    font-size:18px;
     transition:.3s;
 }
 
@@ -254,7 +254,7 @@ body{
 }
 
 .contact-box p{
-    font-size:20px;
+    font-size:18px;
     color:#ddd;
     margin:18px 0;
 }
