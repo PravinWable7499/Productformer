@@ -264,26 +264,26 @@
 
         <!-- QUICK LINKS -->
 
-        <div class="footer-links">
+    <div class="footer-links">
 
-                            <h3>Quick Links</h3>
-                <a href="javascript:void(0)"
-                onclick="openModal('training')">
-                    Training Importance
-                </a>
+        <h3>Quick Links</h3>
 
-                <a href="javascript:void(0)"
-                onclick="openModal('privacy')">
-                    Privacy Policies
-                </a>
+        <a href="javascript:void(0)"
+        onclick="openModal('training')">
+            Training Importance
+        </a>
 
-                <a href="javascript:void(0)"
-                onclick="openModal('terms')">
-                    Terms & Conditions
-                </a>
+        <a href="javascript:void(0)"
+        onclick="openModal('privacy')">
+            Privacy Policies
+        </a>
 
-        </div>
+        <a href="javascript:void(0)"
+        onclick="openModal('terms')">
+            Terms & Conditions
+        </a>
 
+    </div>
         <!-- CONTACT -->
 
         <div class="contact-box" id="contact-us">
@@ -405,26 +405,28 @@
 
 
 <!-- JS -->
-<div id="popupModal" class="modal">
 
-    <div class="modal-content">
+<!-- POPUP -->
 
-        <span class="close"
+<div class="popup-modal" id="popupModal">
+
+    <div class="popup-content">
+
+        <span class="close-btn"
               onclick="closeModal()">
             &times;
         </span>
 
         <h2 id="popupTitle"></h2>
 
-        <div id="popupBody"></div>
+        <div id="popupBody" class="popup-scroll"></div>
 
     </div>
 
 </div>
 
 <!-- JS -->
-
-<script src="../js/popup.js"></script>
+ <script src="../js/pop.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/registration.js"></script>
 </body>

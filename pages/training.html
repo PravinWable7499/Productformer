@@ -29,7 +29,7 @@
             <li>
             <li><a href="#" class="active">TRAINING</a></li>
             <li><a href="services.html">SERVICES</a></li>
-            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">TEAM</a></li>
             <!-- <li><a href="#">CONTACT</a></li> -->
             <li>
                 <a href="#contact-us">
@@ -57,7 +57,7 @@
 
     </section>
 
- <!-- TRAINING PROGRAMS -->
+<!-- TRAINING PROGRAMS -->
 
 <section class="training">
 
@@ -65,56 +65,69 @@
 
     <div class="training-grid">
 
-        <!-- Data Analytics -->
+        <!-- Card 1 -->
         <div class="card">
             <i class="fa-solid fa-chart-column"></i>
-
             <h3>Data Analytics</h3>
-
             <p>
                 Learn Excel, SQL, Power BI, Python,
                 data cleaning, EDA, business intelligence,
                 and real-world analytics projects.
             </p>
+
+            <button class="syllabus-btn"
+                    onclick="openSyllabus('analytics')">
+                View Syllabus
+            </button>
+            
         </div>
 
-        <!-- Data Science -->
+        <!-- Card 2 -->
         <div class="card">
             <i class="fa-solid fa-brain"></i>
-
             <h3>Data Science</h3>
-
             <p>
                 Master Python, Pandas, Machine Learning,
                 Deep Learning, NLP, Computer Vision,
-                and AI model deployment.
+                and AI deployment.
             </p>
+
+            <button class="syllabus-btn"
+                    onclick="openSyllabus('datascience')">
+                View Syllabus
+            </button>
         </div>
 
-        <!-- Python Development -->
+        <!-- Card 3 -->
         <div class="card">
             <i class="fa-brands fa-python"></i>
-
             <h3>Python Development</h3>
-
             <p>
                 Learn Python programming, OOP,
-                databases, Flask, APIs,
-                authentication and project deployment.
+                databases, Flask APIs,
+                authentication and deployment.
             </p>
+
+            <button class="syllabus-btn"
+                    onclick="openSyllabus('python')">
+                View Syllabus
+            </button>
         </div>
 
-        <!-- Android Development -->
+        <!-- Card 4 -->
         <div class="card">
             <i class="fa-brands fa-android"></i>
-
             <h3>Android Development</h3>
-
             <p>
                 Build Android applications using
-                Kotlin/Java, Firebase, APIs,
-                databases and Play Store deployment.
+                Java/Kotlin, Firebase,
+                APIs and deployment.
             </p>
+
+            <button class="syllabus-btn"
+                    onclick="openSyllabus('android')">
+                View Syllabus
+            </button>
         </div>
 
     </div>
@@ -309,6 +322,29 @@
     </div>
 
 </div>
+<div class="popup-modal" id="syllabusPopup">
+
+    <div class="popup-content">
+
+        <span
+            class="close-btn"
+            onclick="closeSyllabus()">
+
+            &times;
+
+        </span>
+
+        <h2 id="syllabusTitle"></h2>
+
+        <div
+            id="syllabusBody"
+            class="popup-scroll">
+
+        </div>
+
+    </div>
+
+</div>
 
 
 <!-- JS -->
@@ -316,5 +352,5 @@
 <script src="../js/popup.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/registration.js"></script>
-</body>
+<script src="../js/pop.js"></script></body>
 </html>
