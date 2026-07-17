@@ -533,15 +533,43 @@
 
 .registration-box input,
 .registration-box select{
-    
     width:100%;
-    padding:14px;
+    height:48px;
+
+    padding:0 45px 0 16px;
+
     border:none;
     border-radius:8px;
     outline:none;
+
     background:#0e1448;
-    color:#f0ebeb;
+    color:#fff;
     font-size:15px;
+
+    box-sizing:border-box;
+
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+.registration-box{
+    position:relative;
+}
+
+.registration-box form{
+    position:relative;
+}
+
+.registration-box form::after{
+    content:"⮟";
+    position:absolute;
+
+    right:25px;
+    top:258px;   /* adjust if needed */
+
+    color:#fff;
+    font-size:20px;
+    pointer-events:none;
 }
 
 .registration-box input::placeholder{
@@ -689,6 +717,7 @@
     background:#1b1b1b;
     color:white;
 }
+
 
 .submit-btn{
     height:50px;          /* reduced */
