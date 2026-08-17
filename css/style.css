@@ -41,15 +41,60 @@
 
     }
 
-    .logo{
-    font-size:38px;
-    font-weight:900;
-    color:#172554;
-    }
+/* ================= LOGO ================= */
 
-    .logo span{
-    color:#ff0066;
-    }
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    height: 90px;
+
+    font-size: 35px;
+    font-weight: 800;
+
+    white-space: nowrap;
+
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+/* PRODUCTFORMER LOGO IMAGE */
+
+.navbar .logo img {
+    display: block !important;
+
+    width: 55px !important;
+    height: 55px !important;
+
+    min-width: 55px !important;
+    max-width: 55px !important;
+
+    min-height: 55px !important;
+    max-height: 55px !important;
+
+    object-fit: contain !important;
+
+    flex: 0 0 55px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    position: relative !important;
+
+    top: 0 !important;
+    left: 0 !important;
+
+    transform: none !important;
+}
+
+/* PRODUCTFORMER TEXT */
+
+.navbar .logo span {
+    color: #ff0066;
+}
 
     /* DESKTOP MENU */
 
@@ -263,16 +308,45 @@
 
 @media(max-width:1100px){
 
-    /* NAVBAR */
-
     .navbar{
         padding:0 20px;
     }
 
-    .logo{
+    .navbar .logo{
+        display:flex;
+        align-items:center;
+        gap:7px;
+
+        height:90px;
+
         font-size:24px;
-        text-align:left;
+
         flex:1;
+
+        white-space:nowrap;
+
+        overflow:hidden;
+    }
+
+    .navbar .logo img{
+        width:502px !important;
+        height:502px !important;
+
+        min-width:502px !important;
+        max-width:502px !important;
+
+        min-height:502px !important;
+        max-height:502px !important;
+
+        flex:0 0 502px !important;
+
+        object-fit:contain !important;
+
+        position:relative !important;
+        top:0 !important;
+        left:0 !important;
+
+        transform:none !important;
     }
 
     /* HAMBURGER */
@@ -556,19 +630,20 @@
     position:relative;
 }
 
-.registration-box form{
-    position:relative;
-}
-
-.registration-box form::after{
-    content:"⮟";
+/* Custom dropdown arrow */
+.registration-box::after{
+    content:"";
     position:absolute;
+    right:62px;
+    top:375px;      /* Adjust if needed */
 
-    right:25px;
-    top:258px;   /* adjust if needed */
+    width:10px;
+    height:10px;
 
-    color:#fff;
-    font-size:20px;
+    border-right:3px solid #fff;
+    border-bottom:3px solid #fff;
+
+    transform:rotate(45deg);
     pointer-events:none;
 }
 
@@ -828,4 +903,19 @@
 
 .popup-scroll li{
     margin:10px 0;
+}
+
+/* FINAL LOGO SIZE */
+.navbar .logo img {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    min-height: 60px !important;
+    max-height: 60px !important;
+    flex: 0 0 60px !important;
+    object-fit: contain !important;
+    display: block !important;
+    position: static !important;
+    transform: none !important;
 }
