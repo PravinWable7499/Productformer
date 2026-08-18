@@ -6,7 +6,7 @@
 }
 
 .navbar{
-    height:90px;
+    height:100px;
     background:#fff;
     display:flex;
     justify-content:space-between;
@@ -55,6 +55,14 @@
     color:white;
 }
 
+.hero h1 {
+    font-size:55px;
+    color:white;
+}
+
+.hero h1 span {
+    color:#ff0066;
+}
 .hero h1{
     font-size:55px;
 }
@@ -832,17 +840,34 @@
 }
 
 .navbar .logo img {
-    width:60px !important;
-    height:60px !important;
+    width:75px !important;
+    height:75px !important;
 
-    min-width:60px !important;
-    max-width:60px !important;
+    min-width:75px !important;
+    max-width:75px !important;
 
-    min-height:60px !important;
-    max-height:60px !important;
+    min-height:75px !important;
+    max-height:75px !important;
 
     object-fit:contain !important;
     display:block !important;
 
-    flex:0 0 60px !important;
+    flex:0 0 75px !important;
+}
+
+.company-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ff0066;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.company-title img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
 }

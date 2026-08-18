@@ -919,3 +919,20 @@
     position: static !important;
     transform: none !important;
 }
+
+.company-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ff0066;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.company-title img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}

@@ -207,7 +207,7 @@ body{
 
 .footer{
     background:#071b46;
-    padding:60px 10% 20px;
+    padding:35px 8% 15px;
     color:#fff;
 }
 
@@ -222,14 +222,27 @@ body{
 
 .company-box{
     flex:1;
-    padding-top:30px;    /* moves content slightly down */
+    padding-top:10px;
 }
 
 .company-title{
+    display:flex;
+    align-items:center;
+    margin-bottom:12px;
+    gap:15px;
+
     color:#ff0066;
     font-size:40px;
     font-weight:800;
+
     margin-bottom:25px;
+}
+
+.company-title img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    display:block;
 }
 
 .company-desc{
@@ -241,8 +254,8 @@ body{
 
 .footer-info{
     display:flex;
-    gap:120px;
-    margin-top:50px;
+    gap:80px;
+    margin-top:25px;
 }
 
 .footer-links h3,
@@ -272,13 +285,13 @@ body{
     margin:18px 0;
 }
 
-/* RIGHT SIDE REGISTRATION FORM */
+/* ================= REGISTRATION FORM ================= */
 
 .register-section,
 .registration-box{
-    width:500px;               /* wider */
+    width:560px;
     background:#0e2555;
-    padding:35px 40px;
+    padding:25px 35px;
     border-radius:22px;
     margin-right:15px;
     border:1px solid rgba(255,255,255,.1);
@@ -303,7 +316,7 @@ body{
 .registration-box form{
     display:flex;
     flex-direction:column;
-    gap:18px;
+    gap:15px;
 }
 
 .register-section input,
@@ -321,6 +334,7 @@ body{
 
     background:#0e1448;
     color:#fff;
+
     font-size:15px;
 
     box-sizing:border-box;
@@ -340,26 +354,33 @@ body{
 
 .registration-box form::after{
     content:"⮟";
+
     position:absolute;
 
     right:24px;
-    top:268px;   /* adjust if needed */
+    top:268px;
 
     color:#fff;
     font-size:20px;
+
     pointer-events:none;
 }
 
 .submit-btn,
 .register-btn{
     height:58px;
+
     border:none;
     border-radius:10px;
+
     background:#ff0066;
     color:#fff;
+
     font-size:20px;
     font-weight:700;
+
     cursor:pointer;
+
     transition:.3s;
 }
 
@@ -368,30 +389,9 @@ body{
     transform:translateY(-3px);
 }
 
-@media (max-width:1100px){
+/* ================= FOOTER RESPONSIVE ================= */
 
-    .navbar{
-        flex-direction:column;
-        justify-content:center;
-        height:auto;
-        padding:20px;
-    }
-
-    .logo{
-        margin-bottom:20px;
-        font-size:34px;
-    }
-
-    .nav-menu{
-        width:100%;
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:18px;
-    }
-
-    .nav-menu a{
-        font-size:16px;
-    }
+@media(max-width:1100px){
 
     .footer-container{
         flex-direction:column;
@@ -664,4 +664,21 @@ body{
     display:block !important;
 
     flex:0 0 60px !important;
+}
+
+.company-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ff0066;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.company-title img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
 }
